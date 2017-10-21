@@ -10,6 +10,9 @@ import UIKit
 
 class LeagueVC: UIViewController {
 
+    var player: Player!
+    
+    @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var mensBtn: UIButton!
     @IBOutlet weak var womensBtn: UIButton!
     @IBOutlet weak var coedBtn: UIButton!
@@ -20,23 +23,41 @@ class LeagueVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        player = Player()
     }
 
     @IBAction func unwindFromMensVC(unwindSegue: UIStoryboardSegue) {
-        
+     
+    }
+    
+    @IBAction func onMensTapped(_ sender: Any) {
+        selectLeague(leagueType: "mens")
+    }
+    
+    @IBAction func onWomensTapped(_ sender: Any) {
+        selectLeague(leagueType: "womens")
+    }
+    
+    @IBAction func onCoedTapped(_ sender: Any) {
+        selectLeague(leagueType: "coed")
+    }
+    
+    func selectLeague(leagueType: String) {
+    player.desiredLeague = leagueType
+    nextBtn.isEnabled = true
     }
     
     @IBAction func onNextTapped(_ sender: Any) {
-        if mensBtnTapped {
+        if onMensTapped {
         performSegue(withIdentifier: "mensVCSegue", sender: self)
-        } else if womensBtnTapped {
+        } else if onWomensTapped {
             performSegue(withIdentifier: "womensVCSegue", sender: self)
-        }else if coedBtnTapped {
+        }else if onCoedTapped {
             performSegue(withIdentifier: "coedVCSegue", sender: self)
         }
     }
     
+ 
 
     /*
     // MARK: - Navigation

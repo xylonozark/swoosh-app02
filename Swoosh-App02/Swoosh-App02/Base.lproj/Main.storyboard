@@ -160,6 +160,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="2rB-AR-xlB" eventType="touchUpInside" id="R0c-3s-sNg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmN-tU-BgX">
                                         <rect key="frame" x="0.0" y="60" width="166" height="30"/>
@@ -167,6 +170,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="2rB-AR-xlB" eventType="touchUpInside" id="g6J-vJ-TLy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUz-r6-7Kn">
                                         <rect key="frame" x="0.0" y="120" width="166" height="30"/>
@@ -174,10 +180,13 @@
                                         <state key="normal" title="Coed">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="2rB-AR-xlB" eventType="touchUpInside" id="sv1-bJ-GmC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WV-rs-Kfm">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WV-rs-Kfm">
                                 <rect key="frame" x="50" y="602" width="275" height="40"/>
                                 <color key="backgroundColor" red="0.31599412449999997" green="0.31912277919999998" blue="0.31912277919999998" alpha="0.64990903249999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -215,6 +224,7 @@
                     <connections>
                         <outlet property="coedBtn" destination="LUz-r6-7Kn" id="RmR-VH-dDb"/>
                         <outlet property="mensBtn" destination="CWd-5c-9oR" id="kz2-58-eXd"/>
+                        <outlet property="nextBtn" destination="4WV-rs-Kfm" id="4nr-TG-VzR"/>
                         <outlet property="womensBtn" destination="CmN-tU-BgX" id="H6f-Ui-CRq"/>
                         <segue destination="xRm-Ia-ydj" kind="show" identifier="mensVCSegue" id="1n8-8O-Cce"/>
                         <segue destination="Kxd-Yw-ium" kind="show" identifier="womensVCSegue" id="ZVN-o0-bYr"/>
