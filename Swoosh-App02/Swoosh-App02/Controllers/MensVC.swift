@@ -1,5 +1,5 @@
 //
-//  LeagueVC.swift
+//  BallerVC.swift
 //  Swoosh-App02
 //
 //  Created by Xantes Fabela on 10/20/17.
@@ -8,33 +8,17 @@
 
 import UIKit
 
-class LeagueVC: UIViewController {
+class MensVC: UIViewController {
 
-    @IBOutlet weak var mensBtn: UIButton!
-    @IBOutlet weak var womensBtn: UIButton!
-    @IBOutlet weak var coedBtn: UIButton!
-    
- 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func unwindFromMensVC(unwindSegue: UIStoryboardSegue) {
-        
-    }
-    
-    @IBAction func onNextTapped(_ sender: Any) {
-        if mensBtnTapped {
-        performSegue(withIdentifier: "mensVCSegue", sender: self)
-        } else if womensBtnTapped {
-            performSegue(withIdentifier: "womensVCSegue", sender: self)
-        }else if coedBtnTapped {
-            performSegue(withIdentifier: "coedVCSegue", sender: self)
-        }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 

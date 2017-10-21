@@ -1,14 +1,14 @@
 //
-//  BallerVC.swift
+//  CoedVC.swift
 //  Swoosh-App02
 //
-//  Created by Xantes Fabela on 10/20/17.
+//  Created by Xantes Fabela on 10/21/17.
 //  Copyright © 2017 Xantes Fabela. All rights reserved.
 //
 
 import UIKit
 
-class BallerVC: UIViewController {
+class CoedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

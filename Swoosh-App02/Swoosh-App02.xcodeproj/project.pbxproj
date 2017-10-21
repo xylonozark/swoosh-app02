@@ -13,7 +13,9 @@
 		224A79211F9AE37600E9547B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224A79201F9AE37600E9547B /* Assets.xcassets */; };
 		224A79241F9AE37600E9547B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224A79221F9AE37600E9547B /* LaunchScreen.storyboard */; };
 		224A792F1F9AED8A00E9547B /* LeagueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A792E1F9AED8A00E9547B /* LeagueVC.swift */; };
-		224A79311F9AEDFE00E9547B /* BallerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A79301F9AEDFE00E9547B /* BallerVC.swift */; };
+		224A79311F9AEDFE00E9547B /* MensVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A79301F9AEDFE00E9547B /* MensVC.swift */; };
+		22BB92CD1F9BB6B1006F5D03 /* WomensVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB92CC1F9BB6B1006F5D03 /* WomensVC.swift */; };
+		22BB92CF1F9BB6CA006F5D03 /* CoedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BB92CE1F9BB6CA006F5D03 /* CoedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		224A79231F9AE37600E9547B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		224A79251F9AE37600E9547B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		224A792E1F9AED8A00E9547B /* LeagueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVC.swift; sourceTree = "<group>"; };
-		224A79301F9AEDFE00E9547B /* BallerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallerVC.swift; sourceTree = "<group>"; };
+		224A79301F9AEDFE00E9547B /* MensVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensVC.swift; sourceTree = "<group>"; };
+		22BB92CC1F9BB6B1006F5D03 /* WomensVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensVC.swift; sourceTree = "<group>"; };
+		22BB92CE1F9BB6CA006F5D03 /* CoedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoedVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,9 @@
 			children = (
 				224A791B1F9AE37600E9547B /* WelcomeVC.swift */,
 				224A792E1F9AED8A00E9547B /* LeagueVC.swift */,
-				224A79301F9AEDFE00E9547B /* BallerVC.swift */,
+				224A79301F9AEDFE00E9547B /* MensVC.swift */,
+				22BB92CC1F9BB6B1006F5D03 /* WomensVC.swift */,
+				22BB92CE1F9BB6CA006F5D03 /* CoedVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				224A79311F9AEDFE00E9547B /* BallerVC.swift in Sources */,
+				224A79311F9AEDFE00E9547B /* MensVC.swift in Sources */,
+				22BB92CF1F9BB6CA006F5D03 /* CoedVC.swift in Sources */,
 				224A791C1F9AE37600E9547B /* WelcomeVC.swift in Sources */,
 				224A791A1F9AE37600E9547B /* AppDelegate.swift in Sources */,
+				22BB92CD1F9BB6B1006F5D03 /* WomensVC.swift in Sources */,
 				224A792F1F9AED8A00E9547B /* LeagueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
