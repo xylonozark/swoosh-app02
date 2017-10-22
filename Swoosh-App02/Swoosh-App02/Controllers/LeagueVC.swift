@@ -11,8 +11,7 @@ import UIKit
 class LeagueVC: UIViewController {
 
     var player: Player!
-    
-    @IBOutlet weak var nextBtn: UIButton!
+
     @IBOutlet weak var mensBtn: UIButton!
     @IBOutlet weak var womensBtn: UIButton!
     @IBOutlet weak var coedBtn: UIButton!
@@ -30,34 +29,32 @@ class LeagueVC: UIViewController {
      
     }
     
-    @IBAction func onMensTapped(_ sender: Any) {
-        selectLeague(leagueType: "mens")
+    @IBAction func unwindFromWomensVC(unwindSegue: UIStoryboardSegue) {
+        
     }
     
-    @IBAction func onWomensTapped(_ sender: Any) {
-        selectLeague(leagueType: "womens")
+    @IBAction func unwindFromCoedVC(unwindSegue: UIStoryboardSegue) {
+        
     }
     
-    @IBAction func onCoedTapped(_ sender: Any) {
-        selectLeague(leagueType: "coed")
-    }
     
-    func selectLeague(leagueType: String) {
-    player.desiredLeague = leagueType
-    nextBtn.isEnabled = true
-    }
-    
-    @IBAction func onNextTapped(_ sender: Any) {
-        if onMensTapped {
+    @IBAction func onMensTapped(_ sender: UIButton) {
+        player.desiredLeague = "mens"
         performSegue(withIdentifier: "mensVCSegue", sender: self)
-        } else if onWomensTapped {
-            performSegue(withIdentifier: "womensVCSegue", sender: self)
-        }else if onCoedTapped {
-            performSegue(withIdentifier: "coedVCSegue", sender: self)
-        }
     }
     
- 
+    @IBAction func onWomensTapped(_ sender: UIButton) {
+        player.desiredLeague = "womens"
+        performSegue(withIdentifier: "womensVCSegue", sender: self)
+    }
+    
+    @IBAction func onCoedTapped(_ sender: UIButton) {
+        player.desiredLeague = "coed"
+        performSegue(withIdentifier: "coedVCSegue", sender: self)
+    }
+    
+   
+
 
     /*
     // MARK: - Navigation
@@ -68,5 +65,7 @@ class LeagueVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+
 
 }
